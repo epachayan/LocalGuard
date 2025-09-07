@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: build"
+		},
+		{
+			"type": "dotnet",
+			"task": "build C:\\Work\\LocalGuard\\LocalGuard\\LocalGuard.csproj",
+			"file": "C:\\Work\\LocalGuard\\LocalGuard\\LocalGuard.csproj",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: build C:\\Work\\LocalGuard\\LocalGuard\\LocalGuard.csproj"
+		}
+	]
+}

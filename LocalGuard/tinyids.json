@@ -1,0 +1,65 @@
+{
+  "WatchDirs": [
+    "."
+  ],
+  "UseAI": true,
+  "AnomalyThreshold": 70.0,
+
+  "UseOnnxRegistry": true,
+  "RegistryOnnxModelPath": "models/ids_registry.onnx",
+
+  "UseOnnx": true,
+  "OnnxModelPath": "models/ids.onnx",
+  "Fusion": "max",
+  "FusionOnnxWeight": 0.6,
+
+  "SuspiciousExtensions": [ "exe", "dll", "scr", "ps1", "vbs", "js", "bat", "cmd" ],
+  "ExcludeSubstrings": [
+    ".git",
+    "node_modules",
+    "bin\\",
+    "obj\\",
+    ".ids_baseline.csv",
+    "ids_events.jsonl",
+    "ids_alerts.jsonl",
+    ".ids_model.json"
+  ],
+
+  "BurstWindowSeconds": 10,
+  "BurstEventsThreshold": 8,
+  "LogRotateBytes": 10485760,
+  "WriteWindowsEventLog": true,
+
+  "BackupDir": "_ids_backups",
+  "AutoBackupExtensions": [ "docx", "xlsx", "pptx", "pdf", "jpg", "png" ],
+  "BackupMaxBytes": 52428800,
+  "BackupOnlyOnAlerts": true,
+
+  "WatchRegistry": [
+    {
+      "Hive": "HKCU",
+      "SubKey": "Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "IncludeSubtree": false
+    },
+    {
+      "Hive": "HKLM",
+      "SubKey": "Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "IncludeSubtree": false
+    },
+    {
+      "Hive": "HKCU",
+      "SubKey": "Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "IncludeSubtree": false
+    },
+    {
+      "Hive": "HKLM",
+      "SubKey": "Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "IncludeSubtree": false
+    },
+    {
+      "Hive": "HKCR",
+      "SubKey": "*\\shell\\open\\command",
+      "IncludeSubtree": true
+    }
+  ],
+}

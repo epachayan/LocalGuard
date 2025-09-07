@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/LocalGuard/bin/Debug/net8.0/LocalGuard.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/LocalGuard",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
+            "name": "C#: LocalGuard",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/LocalGuard/bin/Debug/net8.0/LocalGuard.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/LocalGuard",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        }
+    ]
+}

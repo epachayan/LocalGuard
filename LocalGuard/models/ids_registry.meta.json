@@ -1,0 +1,21 @@
+{
+  "features": [
+    "bucket_HKCU_Run",
+    "bucket_HKLM_Run",
+    "bucket_HKCU_RunOnce",
+    "bucket_HKLM_RunOnce",
+    "bucket_HKCR_open_cmd",
+    "bucket_Other",
+    "isString",
+    "isBinary",
+    "isNumber",
+    "entropy",
+    "lenLog",
+    "created",
+    "modified",
+    "deleted",
+    "burst"
+  ],
+  "input_name": "input",
+  "output_note": "classifier probability (class=1 suspicious)"
+}
