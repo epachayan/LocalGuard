@@ -104,5 +104,3 @@ dotnet publish -c Release -r win-x64 -p:PublishSingleFile=true --self-contained 
 ## License
 MIT (see LICENSE)
 
-## Security
-See .github/SECURITY.md. To report a vulnerability, email security@yourdomain.tld.
